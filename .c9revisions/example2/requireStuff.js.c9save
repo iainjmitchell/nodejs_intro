@@ -1,0 +1,2 @@
+{"ts":1344763916438,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"var module = require('./aModule.js');\n\nconsole.log(module.helloWorlder());"]],"start1":0,"start2":0,"length1":0,"length2":74}]],"length":74}
+{"contributors":[],"silentsave":false,"ts":1344763977006,"patch":[[{"diffs":[[0,"var "],[-1,"m"],[1,"aM"],[0,"odule = "]],"start1":0,"start2":0,"length1":13,"length2":14},{"diffs":[[0,"log("],[-1,"m"],[1,"aM"],[0,"odul"]],"start1":48,"start2":48,"length1":9,"length2":10}]],"length":76,"saved":false}

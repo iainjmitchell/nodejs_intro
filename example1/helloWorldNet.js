@@ -2,4 +2,6 @@ require('net')
 	.createServer(function (socket) {
 		socket.write('helloWorld')
 	})
-	.listen(1330, '127.0.0.1');
+	.listen(process.env.PORT, process.env.IP);
+    
+console.log('listening at ' + process.env.IP + ' on port ' + process.env.PORT);

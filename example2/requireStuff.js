@@ -1,3 +1,3 @@
-var module = require('./aModule.js');
+var aModule = require('./aModule.js');
 
-console.log(module.helloWorlder());
+console.log(aModule.helloWorlder());

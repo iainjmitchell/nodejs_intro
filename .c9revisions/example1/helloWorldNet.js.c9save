@@ -1,0 +1,3 @@
+{"ts":1344692300042,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"require('net')\n\t.createServer(function (socket) {\n\t\tsocket.write('helloWorld')\n\t})\n\t.listen(process.env.PORT);\n"]],"start1":0,"start2":0,"length1":0,"length2":111}]],"length":111}
+{"contributors":[],"silentsave":false,"ts":1344692400612,"patch":[[{"diffs":[[0,"env.PORT"],[1,", process.env.IP"],[0,");\n"]],"start1":100,"start2":100,"length1":11,"length2":27}]],"length":127,"saved":false}
+{"ts":1344692450916,"patch":[[{"diffs":[[0,"nv.IP);\n"],[1,"    \nconsole.log('listening at ' + process.env.IP + ' on port ' + process.env.PORT);\n"]],"start1":119,"start2":119,"length1":8,"length2":93}]],"length":212,"saved":false}

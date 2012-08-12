@@ -1,4 +1,20 @@
-_ = require('underscore');
+var colors = require('colors');
 
-var collection = [1,2];
-console.log(_.first(collection));
+colors.setTheme({
+  silly: 'rainbow',
+  input: 'grey',
+  verbose: 'cyan',
+  prompt: 'grey',
+  info: 'green',
+  data: 'grey',
+  help: 'cyan',
+  warn: 'yellow',
+  debug: 'blue',
+  error: 'red'
+});
+
+// outputs red text
+console.log("this is an error".error);
+
+// outputs yellow text
+console.log("this is a warning".warn);
