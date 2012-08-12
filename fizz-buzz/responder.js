@@ -1,16 +1,18 @@
 require('http')
     .createServer(function (request, response) {
-		
-        console.log(request);
-        var number = request.data;
-        var result = fizzBuzz(number);
-        response.writeHead(200, {'Content-Type': 'text/plain'});
-		response.end(result);
+        var data = '';
+        request.on('data', function (chunk) {
+            data += chunk;
+        });
+        request.on('end', function () {
+            var result = fizzBuzz(data);
+            response.writeHead(200, {'Content-Type': 'text/plain'});
+            response.end('TEAM1: ' +  result);
+        });
 	})
 	.listen(process.env.PORT);
     
     
 function fizzBuzz(number){
-    console.log(number);
     return number;
 }
